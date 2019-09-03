@@ -10,8 +10,7 @@ import './App.css';
     // const punkts_menu = ['SEA', 'AIR', 'ROAD', 'PROJECTS', 'NEWS', 'ABOUT', 'CONTACT'];
     const punkts_menu = buttons.concat(dop_punkts_menu);
     const items_menu = punkts_menu.map((punkt) => <li><a href="#">{punkt}</a></li>); 
-    let i = 0;
-    const items_buttons = buttons.map((btn) => 
+    const items_buttons = buttons.map((btn, i) => 
       <div className="middle-image ">
         <img src={`images/content-image-${++i}.jpg`} alt="" className=""/>
         <button className="midle-image-text midle-image-text-button">{btn}</button>
