@@ -7,7 +7,6 @@ import './App.css';
   function App() {
     const buttons = ['SEA', 'AIR', 'ROAD', 'PROJECTS'];
     const dop_punkts_menu = ['NEWS', 'ABOUT', 'CONTACT'];
-    // const punkts_menu = ['SEA', 'AIR', 'ROAD', 'PROJECTS', 'NEWS', 'ABOUT', 'CONTACT'];
     const punkts_menu = buttons.concat(dop_punkts_menu);
     const items_menu = punkts_menu.map((punkt) => <li><a href="#">{punkt}</a></li>); 
     const items_buttons = buttons.map((btn, i) => 
